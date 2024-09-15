@@ -1,0 +1,108 @@
+/* Reset default margins and paddings */
+body, ul, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #272D37;
+}
+
+/* Section Styling */
+.we-are-feane {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background: #272D37;
+   
+    color: #fff; /* White text for contrast */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 32px;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 90px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+    display: inline-block;
+    background-color: #ffbe33;
+   
+}
+
+.btn-link:hover {
+    background-color: #ffbe33; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-container h2 {
+        font-size: 28px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+
+    .btn-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h2 {
+        font-size: 24px;
+    }
+
+    .text-container p {
+        font-size: 12px;
+    }
+
+    .btn-link {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

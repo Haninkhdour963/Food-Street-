@@ -1,0 +1,138 @@
+/* Reset some default styles */
+
+
+
+/* Slider Section Styling */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.slider-content {
+  position: relative;
+}
+
+.slider-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 10;
+}
+
+.slider-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.slider-header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.slider-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffbe33;
+  color: #fff;
+  border-radius: 90px;;
+  font-size: 16px;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.radio-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.radio-button {
+  width: 12px;
+  height: 12px;
+  background-color: #ffbe33;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+input#slide1:checked ~ .radio-buttons label[for="slide1"],
+input#slide2:checked ~ .radio-buttons label[for="slide2"],
+input#slide3:checked ~ .radio-buttons label[for="slide3"] {
+  background-color: #e03e36;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider-header h1 {
+      font-size: 28px;
+  }
+
+  .slider-header p {
+      font-size: 16px;
+  }
+
+  .slider-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-header h1 {
+      font-size: 24px;
+  }
+
+  .slider-header p {
+      font-size: 14px;
+  }
+
+  .slider-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .radio-button {
+      width: 10px;
+      height: 10px;
+  }
+}

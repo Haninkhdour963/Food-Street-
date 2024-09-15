@@ -1,0 +1,148 @@
+/* Reset default margins and paddings */
+body, ul, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Section Styling */
+.our-menu {
+    padding: 40px 20px;
+    background-color: #fff; /* White background */
+    text-align: center;
+}
+
+.our-menu h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-links {
+    margin-bottom: 30px;
+}
+
+.menu-links a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.menu-links a:hover {
+    border-bottom: 2px solid #ffbe33; /* Red underline on hover */
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu Item Card Styling */
+.menu-card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+}
+
+.card-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: #ffbe33; /* Red color for cart icon */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-menu h3 {
+        font-size: 28px;
+    }
+
+    .menu-links a {
+        font-size: 16px;
+    }
+
+    .card-content h4 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .card-footer {
+        font-size: 14px;
+    }
+
+    .cart-icon {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,221 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+body, ul, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+/* Header and Navigation */
+header {
+    background: #272D37;
+    
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.contanier{
+    display: flex;
+    margin-left: 2px;
+
+}
+.contanier h1{
+    
+    font-family: "Roboto",Helvetica, Arial, sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    color: #ced3d4;
+    font-size: 20px;
+    margin: 14px 25px;
+    padding: 1rem;
+    
+}
+.contanier  a:link, a:visited{
+  width: 30px;
+  height: 30px;
+   font-style: normal; 
+   margin: 18px 10px;
+   color: #ced3d4;
+   
+}
+
+
+.contanier a img{
+   width: 30px;
+   height: 30px;
+   font-style: normal; 
+    margin: 14px 25px;
+    
+}
+
+.contanier li{
+  font-style: normal; 
+  margin: 14px 7px;
+  display: block;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 10px 5px;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+.box a:link, a:visited{
+    border: #CED3D4 1px solid;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+}
+.Ad-space a:link, a:visited {
+    border: #CED3D4 1px solid;
+    color: white;
+    padding: 10px 5px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+ }
+ 
+.cart a:link, a:visited {
+  border: #CED3D4 1px solid;
+    color: white;
+    margin: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding:12px 7px ;
+  }
+  .remove a:link, a:visited {
+    border: #CED3D4 1px solid;
+      color: white;
+      margin: 10px 5px;
+      text-align: justify;
+      text-decoration: none;
+      display: inline-block;
+      padding:12px 7px;
+
+  }
+  .remove img{
+    margin-right: 10px;
+   
+  }
+
+ /* section for menu*/
+
+ .main{
+  background-color: #0c0c0c;
+  text-transform: uppercase;
+ 
+ }
+ .contanier .link {
+  padding-left: 30%;
+  text-decoration: none;
+ }
+  .nav-home{
+    background: #fff;
+    color: #fff;
+    padding: 1rem 0;
+     margin-left: 1 rem;
+   
+  }
+  .div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav-home .contanier h1{
+    
+  font-family: "Roboto",Helvetica, Arial, sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  color: #ced3d4;
+  font-size: 20px;
+  margin-left: 1 rem;
+  margin: 14px 25px;
+  
+}
+
+.nav-home .contanier a  {
+  width: 30px;
+  height: 30px;
+   font-style: normal; 
+   margin: 14px 7px;
+ 
+   
+}
+
+  .font{
+    font-family: "Roboto",Helvetica, Arial, sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    color: #ced3d4;
+    font-size: 20px;
+    padding-left: 1 rem;
+    margin: 14px 25px;
+  }
+ 
+.nav-icons{
+  display: flex;
+    list-style: none;
+    margin: 10px 5px;
+}
+.search-icon a:link, a:visited {
+
+  color: white;
+  padding: 10px 5px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+}
+.user-icon a:link, a:visited {
+
+  color: white;
+  padding: 10px 5px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+}
+.cart-icon a:link, a:visited {
+
+  color: white;
+  padding: 10px 5px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+
+}
+.order-line-btn a:link, a:visited {
+  border: #CED3D4 1px solid;
+  border-radius: 90px;
+  color: white;
+  padding: 10px 5px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ffbe33;
+  width: 130px;
+  height: 96;
+}
